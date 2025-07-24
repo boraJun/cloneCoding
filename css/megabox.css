@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color:white;
+    width:100%;
+    background-image: url("../img/header/header_background_blur.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height:1280px;
+}
+
+.header__container_menu{
+    display:flex;
+    height:85px;
+    padding:0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+.header__side{
+    min-width: 500px;
+    height:100%;
+}
+
+.header__side nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin:1px;
+}
+
+.header__basic_left{
+    width:42%;
+}
+
+.header__basic_left nav li a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.568);
+    font-size: 13px;
+}
+
+.header__side nav li a:hover{
+    text-decoration:underline;
+}
+
+.header__side_bottom{
+    display: flex;
+}
+
+.header__side_imagebutton{
+    display: inline;
+    margin-top:20px;
+}
+
+.header__side_imagebutton a{
+    margin:3px;
+    margin-left : 10px;
+}
+
+
+.header__side_bottom nav{
+    margin: auto;
+    margin-top: 13px;
+    width:50%;
+}
+
+.header__side_bottom nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header__dropdown_menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+}
+
+.header__dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.header__dropdown:hover .menu_bar{
+  display: flex;
+}
+
+.header__dropdown:hover .header__dropdown_menu a{
+    text-decoration: none;
+}
+
+.header__basic_right nav li a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.568);
+    font-size: 13px;
+}
+
+.header__basic_right{
+    margin-left: auto;
+    width:42%;
+}
+
+.header__dropdown{
+  position: relative; /* 자식 요소의 절대 위치 기준 */
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;  /* 위치를 부모 기준으로 절대 위치 설정  */
+  color: ghostwhite;
+  padding-top: 0px;
+  left:-100px;
+  width: 100vw;
+}
+
+.dropdown-content a{
+  position:relative;
+  text-decoration: none;
+  top: 18px;
+  padding: 10px;
+  z-index: 2;
+  color:white;
+}
+
+.menu_bg{
+    background-color: rgba(0, 0, 0, 0.76);
+    height: 35px;
+    margin:5px;
+    position:absolute;
+    width:300vw;
+    left:-100vw;
+    top:10px;
+}
+
+.menu_bar{
+    display:none;
+    flex:1;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    top:12px;
+    height: 2px;
+    z-index: 3;
+}
+
+.header__container_movie{
+    flex:1;
+    background-color: rgba(0, 0, 0, 0.356);
+}

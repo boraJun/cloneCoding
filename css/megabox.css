@@ -5,28 +5,25 @@
 }
 
 /* 헤더 */
-
 header{
+    padding:0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     color:white;
-    width:100%;
-    background-image: url("../img/header/header_background_blur.png");
+    background-image: url("../img/header/header_background.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
-    height:1280px;
-
-    border: 5px solid red;
+    height:900px;
 }
 
 .header__container_menu{
     display:flex;
-    height:85px;
+    height:120px;
     padding:0;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.616);
+    background-color: rgba(0, 0, 0, 0.842);
 }
 
 .header__side{
@@ -127,8 +124,9 @@ header{
 .dropdown-content a{
   position:relative;
   text-decoration: none;
-  top: 18px;
+  top: 8px;
   padding: 10px;
+  font-size: 15px;
   z-index: 2;
   color:white;
 }
@@ -156,36 +154,112 @@ header{
 .header__container_movie{
     display: flex;
     flex:1;
-    background-color: rgba(0, 0, 0, 0.356);
+    background-repeat: cover;
+    background-color: rgba(0, 0, 0, 0.76);
 }
+
 
 .header__movie_section{
     margin: auto;
     width: 1000px;
-    height: 95%;
+    height: 90%;
     border: 1px solid white;
 }
 
 .header__movie_top{
     text-align: center;
+    margin-left:380px;
     height: 10%;
+    display: flex;
+}
+
+.header__movie_top div{
+    position:relative;
+    line-height: 80px;
+    font-size : 20px;
+    width : 100px;
+    left : 80px;
+}
+
+.header__movie_top div div{
+    position : absolute;
+    background-color: rgba(255, 255, 255, 0.247);
+    height: 3px;
+    width : 100%;
+    top : 60px;
+    left : 0px;
+}
+
+#more_movie_button{
+    font-size : 13px;
+    color :white;
+    text-decoration: none;
+}
+#more_movie_button div{
+    margin-left:280px;
+    font-size : 13px;
+    width: 150px;
 }
 
 .header__movie_center{
     display: flex;
     border:1px solid white;
-    height: 60%;
-    justify-content: space-evenly;
-     background-color: darkblue;
+    height: 55%;
+    justify-content: space-between;
 }
 
-.header__movie_center div{
-    padding : 50px;
+.header__movie_center ul{
+    list-style: none;
     border:1px solid white;
+    display: flex;
+    flex:1;
+    justify-content: space-around;
 }
+.header__movie_center ul li{
+    flex:1;
+}
+
+.header__movie_center ul li div img{
+    width : 100%;
+    height: 80%;
+}
+
+.movie_box{
+   display: flex;
+   flex-direction: column;
+   margin:20px;
+   height: 90%;
+}
+
+.movie_box_bottom{
+   display: flex;
+   margin-top : 20px;
+   height:10%;
+   width:100%;
+}
+
+.movie_likebutton img{
+    width: 5px;
+    height: 5px;
+    margin: 3px;
+}
+
+.movie_reservationbutton{
+    flex:0.95;
+    margin-left:20px;
+    text-align: center;
+    background-color: skyblue;
+    font-size: 15px;
+    line-height: 35px;
+    border-radius: 3%;
+    text-decoration: none;
+    color: white;
+}
+
 
 .header__movie_bottom_section{
-    background-color: green;
+    background-color: rgba(0, 0, 0, 0.384);
+    border-radius: 5%;
 }
 
 .header__movie_bottom_section nav ul{
@@ -197,6 +271,31 @@ header{
     list-style: none; 
 }
 
+.header__movie_bottom_section nav ul li{
+    margin: 30px;
+    height: 50%;
+    line-height: 45px;
+    text-align: center;
+    flex:1;}
+
+.header__movie_bottom_section input{
+    width : 70%;
+    padding: 3px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.header__movie_bottom_section a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.moviebox_bottom_mouse{
+    margin:auto;
+    width : 10px;
+    line-height: 150px;
+}
 
 /* 메인 */
 main{
@@ -214,6 +313,8 @@ main{
     height : 500px;
     background-color:beige;
 }
+
+
 
 /* 푸터 */
 footer{

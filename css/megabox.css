@@ -102,10 +102,107 @@ header{
 }
 
 
+.header__sitemap{
+    position: absolute;
+    display: none;
+    flex-wrap: wrap;
+    width : 100vw;
+    margin-top: 10px;
+}
+
+.header__dropdown_menu:hover .header__sitemap{
+    display: flex;
+}
+
+.header__dropdown_menu{
+    border: 1px white;
+    position: relative;
+}
+
+.header__dropdown_menu:hover #header__menu_closebutton{
+    display: inline;
+}
+
+#header__menu_closebutton{
+    position: absolute;
+    left: 2px;
+    top: 8px;
+    display: none;
+}
+
+#header__sitemap_bg{
+    position: absolute;
+    width: 200vw;
+    left:-50vw;
+    height: 650px;
+    background-color: rgb(36, 36, 36);
+    z-index: -1;
+}
+
+.header__sitemap div{
+    font-size: 15px;
+}
+.header__sitemap a{
+    color:white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.header__sitemap a:hover{
+    color:rgb(5, 134, 255);
+    text-decoration: underline;
+}
+
+.header__sitemap_title{
+    border-top: 1px solid rgb(82, 82, 82);
+    border-bottom: 1px solid rgb(82, 82, 82);
+    text-align: center;
+    padding : 10px 0px;
+    font-size: 15px;
+}
+
+#header__sitemap_text{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 25px;
+    font-size: 20px;
+    z-index: 4;
+}
+
+.header__sitemap_set{
+    display: flex;
+    flex-direction: column;
+    margin : 20px 30px;
+    z-index: 4;
+}
+
+.header__sitemap_column{
+    display: flex;
+    flex-wrap: wrap;
+    width:900px;
+}
+
+.header__sitemap nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width : 120px;
+    margin: 0;
+    transform: translate(-40px,0);
+}
+
+.header__sitemap nav ul li{
+    width : 140px;
+    height: 30px;
+    text-align: center;
+    margin: 0;
+}
+
 .header__dropdown_menu a{
     text-decoration: none;
     font-size: 20px;
     color:white;
+    font-size: 12px;
 }
 
 .header__dropdown:hover .dropdown-content{
@@ -172,24 +269,26 @@ header{
     background-color: rgb(41, 41, 41);
     height: 110px;
     position:absolute;
-    width:100vw;
+    width:200vw;
     top:10px;
     z-index: 2;
 }
 
-.menu_dropdown_loginlink{
-    margin-top : 50px;
-    margin-left:200px;
+#menu_dropdown_loginlink{
+  position: absolute;  /* 위치를 부모 기준으로 절대 위치 설정  */
+  padding-top: 0px;
+  top:50px;
+  left:720px;
+  width: 100vw;
 }
+
 #login_text_link{
-    margin-top : 100px;
     border-radius: 8%;
     border : 2px solid white;
     padding : 7px;
     font-size: 12px;
 }
 #join_text_link{
-    margin-top : 100px;
     text-decoration: underline;
     font-size: 12px;
 }
@@ -400,7 +499,8 @@ header{
     height: 50%;
     line-height: 45px;
     text-align: center;
-    flex:1;}
+    flex:1;
+}
 
 .header__movie_bottom_section input{
     width : 70%;
@@ -423,10 +523,12 @@ header{
 
 /* 메인 */
 main{
+    height : 1300px;
 }
 
 .main__container_curation{
     width: 100%;
+    min-width: 1000px;
     height : 800px;
     display: flex;
     color:white;
@@ -548,12 +650,199 @@ main{
     text-align: center;
 }
 
+.movie_curation_box ul li a img{
+    height: 75%;
+}
+
+
+.main__container_theatherinfo{
+    font-size: 30px;
+    margin-left: 100px;
+    color:rgb(47, 27, 121);
+    width : 1000px;
+    margin: auto;
+}
+
+.main__container_theatherinfo_title{
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.theatherinfo_list{
+    display: flex;
+}
+
+.theatherinfo_list nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.theatherinfo_list nav ul li{
+    display: flex;
+    width : 130px;
+    height: 130px;
+    margin : 10px;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.theatherinfo_list nav ul li img{
+    display: flex;
+    width : 130px;
+    height: 260px;
+}
+
+.theatherinfo_list nav ul li img:hover{
+    margin-top: -130px;
+}
+
+.theatherinfo_list a{
+    margin: auto;
+}
+.theatherinfo_list a img{
+    width : 20px;
+}
+
+.theatherinfo_list nav ul li{
+    list-style: none;
+}
+
+.main__theatherInfo_notice{
+    display: flex;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.main__theatherInfo_notice *{
+    font-size: 13px;
+    margin:5px 10px;
+    color:rgb(66, 66, 66);
+    text-decoration : none;
+}
+
+.main__container_theatherinfo a:hover{
+    text-decoration: underline;
+}
+
+.main__theatherInfo_notice_left{
+    display: flex;
+}
+
+.main__theatherInfo_notice_right{
+    display: flex;
+    margin-left: 350px;
+}
+
+.main__theatherInfo_notice_right div img{
+    height: 12px;
+    padding: 0;
+    margin : 0;
+    transform: translate(2px, 1px);
+}
+
+
+.main__theather_qna nav ul{
+    margin-top:50px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.main__theather_qna nav ul li img{
+    margin-left:20px;
+    width: 55px;
+    height: 50px;
+}
+
+.main__theather_qna nav ul li a{
+    text-decoration: none;
+}
+
+.main__theather_qna nav ul li div{
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+    color:rgb(66, 66, 66);
+}
+
 /* 푸터 */
 footer{
-    border: 5px solid yellow;
-}
-.footer__container{
     width: 100%;
+    background-color:rgb(241, 241, 241);
+}
+
+.footer__container{
+    width: 1000px;
     height : 200px;
-    background-color:darkgray;
+    margin: auto;
+}
+
+.footer__left_list ul{
+    display: flex;
+    list-style: none;
+}
+
+.footer__left_list ul li a{
+    font-size: 12px;
+    margin:7px;
+    color : rgb(90, 90, 90);
+    text-decoration: none;
+}
+
+.footer__left_list ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer__left_list ul li a b{
+    font-size: 12px;
+}
+
+.footer__container{
+    display: flex;
+}
+
+.footer__left_bottom{
+    display: flex;
+    margin-top: 30px;
+}
+
+.footer__left_bottom div{
+    color : rgb(90, 90, 90);
+    font-size: 12px;
+}
+
+.footer__left_bottom img{
+    margin-right: 15px;
+}
+
+.footer__right div{
+    display: flex;
+    border : 3px solid rgb(90, 90, 90);
+    padding : 2px;
+    border-radius: 15%;
+    margin: 24px;
+}
+
+.footer__right div a{
+    font-size: 12px;
+    text-decoration: none;
+    color:rgb(90, 90, 90);
+}
+
+.footer__right_sns ul{
+   list-style : none;
+    display : flex;
+    width : 130px;
+}
+
+.footer__right_sns ul li{
+   margin : 2px;
+}
+
+.footer__right_sns ul img{
+    width: 20px;
+}
+
+.footer__right_sns ul{
+    display : flex;
+    justify-content: center;
 }

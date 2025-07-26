@@ -10,11 +10,29 @@ header{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    color:white;
-    background-image: url("../img/header/header_background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; 
+    color:white; 
     height:900px;
+}
+
+#header__backgroundImage{
+    background-image: url("../img/header/header_background.jpg");
+    position:absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:900px;
+    z-index: -3;
+}
+
+#header__layerColor{
+    background-image: url("../img/header/header_background_layer.jpg");
+    position:absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:900px;
+    z-index: -2;
+    opacity: 0.92;
 }
 
 .header__container_menu{
@@ -23,7 +41,8 @@ header{
     padding:0;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.842);
+    background-color: rgba(0, 0, 0, 0.336);
+    z-index: 1;
 }
 
 .header__side{
@@ -57,15 +76,19 @@ header{
 }
 
 .header__side_imagebutton{
-    display: inline;
+    display: flex;
     margin-top:20px;
 }
 
 .header__side_imagebutton a{
     margin:3px;
     margin-left : 10px;
+    line-height: 15px;
 }
 
+.header__side_imagebutton div a{
+    margin-left : 10px;
+}
 
 .header__side_bottom nav{
     margin: auto;
@@ -91,6 +114,10 @@ header{
 
 .header__dropdown:hover .menu_bar{
   display: flex;
+}
+
+.header__dropdown:hover #dropdown-content-login{
+    display: flex;
 }
 
 .header__dropdown:hover .header__dropdown_menu a{
@@ -133,12 +160,63 @@ header{
 
 .menu_bg{
     background-color: rgba(0, 0, 0, 0.76);
-    height: 35px;
+    height: 40px;
     margin:5px;
     position:absolute;
     width:300vw;
     left:-100vw;
     top:10px;
+}
+
+#login_menu_bg{
+    background-color: rgb(41, 41, 41);
+    height: 110px;
+    position:absolute;
+    width:100vw;
+    top:10px;
+    z-index: 2;
+}
+
+.menu_dropdown_loginlink{
+    margin-top : 50px;
+    margin-left:200px;
+}
+#login_text_link{
+    margin-top : 100px;
+    border-radius: 8%;
+    border : 2px solid white;
+    padding : 7px;
+    font-size: 12px;
+}
+#join_text_link{
+    margin-top : 100px;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+#login_menu_close{
+    position:absolute;
+    font-size: 20px;
+    transform: translate(105px, -38px);
+    z-index: 4;
+    background-color: rgb(41, 41, 41);
+    padding: 9px;
+    border-radius: 100%;
+}
+
+#dropdown-content-login{
+    position:absolute;
+    transform:translate(-1300px, 0);
+    justify-content: center;
+}
+
+.dropdown-content div b{
+    font-size: 15px;
+    position:absolute;
+    left:680px;
+    z-index: 4;
+    text-align: center;
+    margin-top : 30px;
 }
 
 .menu_bar{
@@ -154,16 +232,12 @@ header{
 .header__container_movie{
     display: flex;
     flex:1;
-    background-repeat: cover;
-    background-color: rgba(0, 0, 0, 0.76);
 }
-
 
 .header__movie_section{
     margin: auto;
     width: 1000px;
     height: 90%;
-    border: 1px solid white;
 }
 
 .header__movie_top{
@@ -191,26 +265,35 @@ header{
 }
 
 #more_movie_button{
+    position: relative;
     font-size : 13px;
     color :white;
     text-decoration: none;
 }
+#more_movie_button:hover{
+    text-decoration: underline;
+}
+
 #more_movie_button div{
     margin-left:280px;
     font-size : 13px;
     width: 150px;
 }
 
+#more_movie_button img{
+    position: absolute;
+    top : 32px;
+    padding-left : 8px;
+}
+
 .header__movie_center{
     display: flex;
-    border:1px solid white;
     height: 55%;
     justify-content: space-between;
 }
 
 .header__movie_center ul{
     list-style: none;
-    border:1px solid white;
     display: flex;
     flex:1;
     justify-content: space-around;
@@ -228,32 +311,73 @@ header{
    display: flex;
    flex-direction: column;
    margin:20px;
-   height: 90%;
+   height: 80%;
+}
+.movie_box_img{
+   position: relative;
 }
 
+
+.movie_box_img_info{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 90.5%;
+    height: 91%;
+    display: none;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.74);
+    padding: 10px;
+}
+
+.movie_box:hover .movie_box_img_info {
+    display:inline;
+}
+
+.movie_box a{
+    height: 100%;
+}
+.movie_box a img{
+    min-height: 305px;
+}
 .movie_box_bottom{
    display: flex;
-   margin-top : 20px;
+   margin-top : 10px;
    height:10%;
    width:100%;
 }
 
-.movie_likebutton img{
-    width: 5px;
-    height: 5px;
-    margin: 3px;
+
+
+.movie_box_bottom a{
+    text-decoration: none;
+    line-height: 35px;
+    color: white;
+    border-radius: 3%;
 }
+
+.movie_likebutton{
+    border : 1px solid white;
+    border-radius: 20%;
+    background-color: rgba(0, 0, 0, 0.918);
+    font-size: 15px;
+    padding-left : 3px;
+    padding-right : 3px;
+    padding-top : 0px;
+    text-align: center;
+    height: 35px;
+    width: 60px;
+}
+
 
 .movie_reservationbutton{
     flex:0.95;
+    font-size: 15px;
     margin-left:20px;
     text-align: center;
-    background-color: skyblue;
+    background-color: rgb(75, 149, 179);
     font-size: 15px;
     line-height: 35px;
-    border-radius: 3%;
-    text-decoration: none;
-    color: white;
 }
 
 
@@ -299,22 +423,130 @@ header{
 
 /* 메인 */
 main{
-    border: 5px solid green;
 }
 
 .main__container_curation{
     width: 100%;
-    height : 500px;
-    background-color: darkviolet;
+    height : 800px;
+    display: flex;
+    color:white;
+    background-color: rgb(37, 36, 81);
+    justify-content:center;
 }
 
-.main__container_movieinfo{
-    width: 100%;
-    height : 500px;
-    background-color:beige;
+.movie_curtion_left{
+    margin-top: 50px;
+    width:300px;
+}
+
+.curation_movie_img{
+    position: relative;
+}
+
+.curation_img_layer{
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+.movie_curtion_left div b{
+    margin-left: 10px;
+}
+
+#curation_movie_img_main{
+    margin-left : 25px;
+    width:250px;
+    border-radius: 5%;
+}
+
+.movie_curation_link{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
+.movie_curation_link a{
+    color:white;
+    text-decoration: none;
+    padding: 6px;
+    width : 100px;
+    text-align: center;
+    border-radius: 5%;
+    font-size: 18px;
+}
+
+#movie_curation_link_detail{
+    border:2px solid white;
+}
+
+#movie_curation_link_reservation{
+    background-color: rgb(58, 118, 141);
+}
+
+.movie_curtion_right{
+    margin-top: 50px;
+    width:700px;
+}
+
+.movie_curation_box{
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+}
+
+.movie_curation_box ul li{
+    position: relative;
+}
+
+#more_curation_link{
+    flex:1;
+    text-align: right;
+    line-height: 20px;
+    padding:3px;
+}
+
+#more_curation_link a{
+    text-decoration: none;
+    color:white;
+    font-size:15px;
+}
+
+
+#movie_curation_titleinfo{
+    margin:20px 10px 0px 10px;
+    font-size: 15px;
+}
+
+#movie_curation_title{
+    padding-top: 0;
+    margin:0px 10px;
+    font-size: 35px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(90, 90, 90);
+}
+
+
+#movie_curation_textcontent{
+    margin:10px;
+    font-size: 15px;
+}
+
+.movie_curation_box ul{
+    list-style: none;
+    display: flex;
+}
+
+.curation_movie_img
+{
+    width: 160px;
+    border-radius: 8%;
+    margin:8px;
+}
+
+.movie_curation_box ul li div{
+    font-size: 15px;
+    text-align: center;
+}
 
 /* 푸터 */
 footer{

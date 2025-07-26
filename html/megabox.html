@@ -8,6 +8,10 @@
 </head>
 <body>
   <header>
+    <div id = "header__background">
+      <div id="header__layerColor"></div>
+      <div id="header__backgroundImage"></div>
+    </div>
     <div class="header__container_menu">
       <div class="header__side">
         <div class="header__basic_left">
@@ -114,7 +118,19 @@
           </nav>
           <div class="header__side_imagebutton">
             <a href="#" id="header__side_calendarbutton"><img src="../img/header/header_side_calendarbutton.png"></a>
-            <a href="#" id="header__side_mypagebutton"><img src="../img/header/header_side_myPagebutton.png"></a>
+            <div class="header__dropdown">
+                <div class="header__dropdown_menu">
+                  <a href="#" id="header__side_mypagebutton"><img src="../img/header/header_side_myPagebutton.png"><div class="dropdown-content"><div id="login_menu_close">X</div></div></a>
+                </div>
+                <div class="dropdown-content" id="dropdown-content-login">
+                  <div id="login_menu_bg"></div>
+                  <div><b>영화를 사랑하는 당신을 위한 꼭 맞는 혜택까지 확인해 보세요!</b></div>
+                  <div class="menu_dropdown_loginlink">
+                    <a href="#" id="login_text_link">로그인</a>                  
+                    <a href="#" id="join_text_link">혹시 아직 회원이 아니신가요?</a>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -123,43 +139,72 @@
       <section class="header__movie_section">
         <div class="header__movie_top">
           <div>박스오피스<div></div></div>
-          <a href="#" id="more_movie_button"><div>더많은 영화 보기 <img src="../img/header/header_side_searchbutton.png" alt=""></div></a>
+          <a href="#" id="more_movie_button"><div>더많은 영화 보기 <img src="../img/header/header_moviebox_crossbutton.png" alt=""></div></a>
         </div>
         <div class="header__movie_center">
           <ul>
             <li>
               <div class="movie_box">
-                <img src="../img/header/movie_1.jfif">
-                <div class="movie_box_bottom">
-                  <a href="" class="movie_likebutton"><img src="../img/header/header_side_menubutton.png"></a>
-                  <a href="" class="movie_reservationbutton">예매</a>
+                <div class="movie_box_img">
+                  <a href="#"><img src="../img/movie/movie_좀비딸.jpg"></a>
+                  <div class ="movie_box_img_info">
+                    "나의 딸은 좀비다. 이 세상 마지막 남은 유일한 좀비"<br><br>
+                    댄스 열정을 불태우는 사춘기 딸 '수아'와 함께 티격태격 일상을 보내는
+                    맹수 전문 사육사 '정환'.<br>
+                    어느날 전 세계를 강타한 좀비 바
+                  </div>
+                </div>
+                <div class="movie_box_bottom">                  
+                  <a href="#" class="movie_likebutton">♡ 1.2K</a>
+                  <a href="#" class="movie_reservationbutton">예매</a>
                 </div>
               </div>
             </li>
             <li>
               <div class="movie_box">
-                <img src="../img/header/movie_1.jfif" alt="">
+                <div class="movie_box_img">
+                  <a href="#"><img src="../img/movie/movie_f1.jpg"></a>
+                  <div class ="movie_box_img_info">
+                    최고가 되지 못한 전설 VS 최고가 되고 싶은 루키<br><br>
+                    한때 주목받는 유망주였지만 끔찍한 사고로 F1에서 우승하지 못하고<br>
+                    한순간에 추락한 드라이버 '소니
+                  </div>
+                </div>
                 <div class="movie_box_bottom">
-                  <a href="" class="movie_likebutton"><img src="../img/header/header_side_menubutton.png"></a>
-                  <a href="" class="movie_reservationbutton">예매</a>
+                  <a href="#" class="movie_likebutton">♡ 999</a>
+                  <a href="#" class="movie_reservationbutton">예매</a>
                 </div>
               </div>
             </li>
             <li>
               <div class="movie_box">
-                <img src="../img/header/movie_1.jfif" alt="">
+                <div class="movie_box_img">
+                  <a href="#"><img src="../img/movie/movie_전지적.jpg"></a>
+                  <div class ="movie_box_img_info">
+                    10년 이상 연재된 소설이 완결된 날 소설 속 세계가 현실이 되어 버리고,
+                    유일한 독자였던 '유종혁' 그리고 동료들과 함께 멸망한 세계에서 살아남기 위한 이야기
+                  </div>
+                </div>
                 <div class="movie_box_bottom">
-                  <a href="" class="movie_likebutton"><img src="../img/header/header_side_menubutton.png"></a>
-                  <a href="" class="movie_reservationbutton">예매</a>
+                  <a href="#" class="movie_likebutton">♡ 2K</a>
+                  <a href="#" class="movie_reservationbutton">예매</a>
                 </div>
               </div>
             </li>
             <li>
               <div class="movie_box">
-                <img src="../img/header/movie_1.jfif" alt="">
+                <div class="movie_box_img">
+                  <a href="#"><img src="../img/movie/movie_판타스틱4.jpg"></a>
+                  <div class ="movie_box_img_info">
+                    세상을 뒤흔들 우주적 사건 발생<br>
+                    2025년 7월, 마블의 가장 '판타스틱'한 팀이 온다!<br><br>
+                    전 세계적인 관심 속 우주로 떠난 4명의 엘리트 우주비행사<br>
+                    '리드 리처드', '수잔스톰','조니
+                  </div>
+                </div>
                 <div class="movie_box_bottom">
-                  <a href="" class="movie_likebutton"><img src="../img/header/header_side_menubutton.png"></a>
-                  <a href="" class="movie_reservationbutton">예매</a>
+                  <a href="#" class="movie_likebutton">♡ 789</a>
+                  <a href="#" class="movie_reservationbutton">예매</a>
                 </div>
               </div>
             </li>
@@ -185,7 +230,47 @@
   </header>
   <main>
     <section class="main__container_curation">
-      <div>큐레이션</div>
+      <div class="movie_curtion_left">
+        <div>
+          <b>큐레이션<br><br>
+          </b>
+        </div>
+        <div class="curation_movie_img">
+          <img src="../img/movie/movie_이사.jpg" class="curation_movie_img" id="curation_movie_img_main">
+          <img src="../img/main/curation_society.png" class="curation_img_layer">
+        </div>
+        <div class="movie_curation_link">
+          <a href="#" id="movie_curation_link_detail">상세정보</a>
+          <a href="#" id="movie_curation_link_reservation">예매</a>
+        </div>
+      </div>
+      <div class="movie_curtion_right">
+        <div id="more_curation_link"><a href="#">큐레이션 더보기<img src="../img/header/header_moviebox_crossbutton.png" alt=""></a></div>
+        <div id="movie_curation_titleinfo">#필름소사이어티</div>
+        <div id="movie_curation_title">이사</div>
+        <div id="movie_curation_textcontent">
+          화목한 가정을 자부하던 학년 소녀 렌<br><br>
+
+          어느 날 아빠가 집을 나가고 엄가가 이혼을 선언했다.<br><br>
+
+          "나는 엄마 아빠가 싸워도 참았어<br>
+          근데 왜 엄마 아빠는 못 참는 거야?"<br><br>
+
+          엄마가 만든 '둘을 위한 계약서'도 싫고
+        </div>
+        <nav class="movie_curation_box">
+          <ul>
+            <li><a href="#"><img src="../img/movie/movie_미세르코르디아.jpg" class="curation_movie_img"></a>
+              <img src="../img/main/curation_f.png" class="curation_img_layer"><div>미세르코르디아</div></li>
+            <li><a href="#"><img src="../img/movie/movie_버터플라이.jpg" class="curation_movie_img"></a>
+              <img src="../img/main/curation_f.png" class="curation_img_layer"><div>스왈로우테일 버터플라이</div></li>
+            <li><a href="#"><img src="../img/movie/movie_반고흐.jpg" class="curation_movie_img"></a>
+              <img src="../img/main/curation_f.png" class="curation_img_layer"><div>반고흐, 밀밭과 구름 낀 하늘</div></li>
+            <li><a href="#"><img src="../img/movie/movie_발코니의여자들.jpg" class="curation_movie_img"></a>
+              <img src="../img/main/curation_f.png" class="curation_img_layer"><div>발코니의 여자들</div></li>
+          </ul>
+        </nav>
+      </div>      
     </section>
     <section class="main__container_movieinfo">
       <div>영화관 정보</div>

@@ -22,17 +22,18 @@ header{
     width: 100%;
     height:900px;
     z-index: -3;
+    filter: blur(10px);
 }
 
 #header__layerColor{
-    background-image: url("../img/header/header_background_layer.jpg");
+    /* background-image: url("../img/header/header_background_layer.jpg"); */
     position:absolute;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height:900px;
     z-index: -2;
-    opacity: 0.92;
+    background-color: rgba(10, 10, 10, 0.9);
 }
 
 .header__container_menu{
@@ -101,6 +102,9 @@ header{
     justify-content: space-between;
 }
 
+#header__side_calendarbutton{
+    transform: translate(0, 4px);
+}
 
 .header__sitemap{
     position: absolute;
@@ -114,9 +118,13 @@ header{
     display: flex;
 }
 
+.header__dropdown_menu:hover .header__dropdown_searchmovie{
+    display: flex;
+}
+
 .header__dropdown_menu{
-    border: 1px white;
     position: relative;
+    padding-bottom: 20px;
 }
 
 .header__dropdown_menu:hover #header__menu_closebutton{
@@ -125,8 +133,8 @@ header{
 
 #header__menu_closebutton{
     position: absolute;
-    left: 2px;
-    top: 8px;
+    left: 1px;
+    top: 7px;
     display: none;
 }
 
@@ -198,12 +206,111 @@ header{
     margin: 0;
 }
 
+.header__dropdown_menu:hover #header__search_closebutton{
+    display: inline;
+}
+
+#header__search_closebutton{
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    display: none;
+}
+
+
+.header__dropdown_searchmovie{
+    position: absolute;
+    display: none;
+    flex-wrap: wrap;
+    width : 100vw;
+    top: 0px;
+    margin-top: 0px;
+}
+
+#header__searchmovie_bg{
+    position: absolute;
+    width: 200vw;
+    left:-50vw;
+    height: 350px;
+    top:55px;
+    background-color: rgb(53, 31, 103);
+    z-index: -1;
+}
+
+
+.header__searchmovie_section{
+    display: flex;
+    position: absolute;
+    top:70px;
+    left:-80px;
+}
+
+.header__searchmovie_left{
+    display: flex;
+    flex-direction: column;
+    width : 400px;
+}
+
+.header__searchmovie_left_top{
+    margin-bottom: 20px;
+}
+
+.header__searchmovie_left_top a{
+    padding-bottom: 10px;
+}
+
+.header__searchmovie_left_top a:hover{
+    border-bottom:2px solid white;
+}
+
+
+.header__searchmovie_left_bottom{
+    display : flex;
+}
+
+.header__searchmovie_left_bottom img{
+    width : 160px;
+}
+
+.header__searchmovie_left_bottom nav ul{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+}
+
+.header__searchmovie_left_bottom nav ul li{
+    font-size: 13px;
+}
+
+.header__searchmovie_left_bottom nav ul li b{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+
 .header__dropdown_menu a{
     text-decoration: none;
     font-size: 20px;
     color:white;
     font-size: 12px;
 }
+
+.header__searchmovie_right{
+    margin: auto;
+    margin-left: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.596);
+}
+
+.header__searchmovie_right input{
+    background-color: rgba(0, 0, 0, 0);
+    color:white;
+    outline:none;
+    width : 350px;
+    height : 25px;
+    font-size: 25px;
+    border: 0px;
+}
+
 
 .header__dropdown:hover .dropdown-content{
   display: block;
@@ -241,6 +348,7 @@ header{
   position: absolute;  /* 위치를 부모 기준으로 절대 위치 설정  */
   color: ghostwhite;
   padding-top: 0px;
+  top:40px;
   left:-100px;
   width: 100vw;
 }
@@ -250,7 +358,7 @@ header{
   text-decoration: none;
   top: 8px;
   padding: 10px;
-  font-size: 15px;
+  font-size: 12px;
   z-index: 2;
   color:white;
 }
@@ -262,7 +370,7 @@ header{
     position:absolute;
     width:300vw;
     left:-100vw;
-    top:10px;
+    top:12px;
 }
 
 #login_menu_bg{
@@ -270,7 +378,7 @@ header{
     height: 110px;
     position:absolute;
     width:200vw;
-    top:10px;
+    top:12px;
     z-index: 2;
 }
 
@@ -278,7 +386,7 @@ header{
   position: absolute;  /* 위치를 부모 기준으로 절대 위치 설정  */
   padding-top: 0px;
   top:50px;
-  left:720px;
+  left:740px;
   width: 100vw;
 }
 
@@ -295,12 +403,9 @@ header{
 
 #login_menu_close{
     position:absolute;
-    font-size: 20px;
-    transform: translate(105px, -38px);
+    transform: translate(92px, -42px);
     z-index: 4;
-    background-color: rgb(41, 41, 41);
     padding: 9px;
-    border-radius: 100%;
 }
 
 #dropdown-content-login{
@@ -323,7 +428,7 @@ header{
     flex:1;
     position: relative;
     background-color: rgb(255, 255, 255);
-    top:12px;
+    top:-7px;
     height: 2px;
     z-index: 3;
 }
@@ -369,6 +474,7 @@ header{
     color :white;
     text-decoration: none;
 }
+
 #more_movie_button:hover{
     text-decoration: underline;
 }
@@ -421,12 +527,47 @@ header{
     position: absolute;
     left: 0;
     top:0;
-    width: 90.5%;
-    height: 91%;
+    width: 175px;
+    height: 269px;
     display: none;
-    font-size: 12px;
     background-color: rgba(0, 0, 0, 0.74);
-    padding: 10px;
+    padding: 18px;
+}
+
+.movie_box_img_info_text{
+    font-size: 12px;
+}
+
+.movie_box_img_info_text_bottom{
+    position : absolute;
+    top : 250px;
+    width : 180px;
+}
+
+.movie_box_img_info_text_bottom_text{
+    font-size: 15px;
+    line-height: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.233);
+    padding-left: 35px;
+}
+
+.movie_box_img_info_text_bottom div div{
+    font-size: 25px;
+    margin-left: 25px;
+    line-height: 45px;
+    color : rgb(3, 124, 148)
+}
+
+.movie_box_img_info_text_bottom div{
+    display: flex;
+}
+
+.movie_box_number em{
+    position: absolute;
+    top:0px;
+    left:0px;
+    margin-left: 10px;
+    margin-top:5px;
 }
 
 .movie_box:hover .movie_box_img_info {
@@ -470,24 +611,26 @@ header{
 
 
 .movie_reservationbutton{
-    flex:0.95;
+    flex:1;
     font-size: 15px;
     margin-left:20px;
     text-align: center;
-    background-color: rgb(75, 149, 179);
+    background-color: rgb(3, 124, 148);
     font-size: 15px;
-    line-height: 35px;
+    padding-bottom: 5px;
 }
 
 
 .header__movie_bottom_section{
-    background-color: rgba(0, 0, 0, 0.384);
-    border-radius: 5%;
+    background-color: rgba(0, 0, 0, 0.212);
+    width:96%;
+    margin:auto;
 }
 
 .header__movie_bottom_section nav ul{
     display: flex;
-    height: 100px;
+    margin-top : 30px;
+    height: 70px;
     flex:1;
     justify-content: space-around;
     align-items: center;
@@ -497,16 +640,36 @@ header{
 .header__movie_bottom_section nav ul li{
     margin: 30px;
     height: 50%;
-    line-height: 45px;
+    line-height: 25px;
     text-align: center;
     flex:1;
 }
 
-.header__movie_bottom_section input{
-    width : 70%;
-    padding: 3px;
-    margin-right: 5px;
-    font-size: 12px;
+#moviebox_search_name{
+    padding:0;
+    color:white;
+    border:0px;
+    outline: none;
+    width : 130px;
+    padding: 1px;
+    margin-right: 3px;
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#input_moviebox_search_name{
+    height:32px;
+    width: 170px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgb(82, 82, 82);
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+#input_moviebox_search_name img{
+    height: 15px;
+    width:15px;
+    margin: 0;
+    padding:0;
 }
 
 .header__movie_bottom_section a{
@@ -515,11 +678,41 @@ header{
     color: white;
 }
 
+.movie_bottom_section_list{
+    border-left: 1px solid rgba(255, 255, 255, 0.199);
+}
+
+.moviebox_bottem_linkimg{
+    width : 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 6px;
+    transform: translate(0, 3px);
+}
+
 .moviebox_bottom_mouse{
     margin:auto;
     width : 10px;
     line-height: 150px;
 }
+
+.moviebox_bottom_mouse{
+    animation-duration: 0.7s;
+    animation-name: motion;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+
+@keyframes motion {
+  from {
+    margin-top: 0px;
+  }
+  to {
+    margin-top: 10px;
+  }
+}
+
 
 /* 메인 */
 main{
@@ -611,6 +804,10 @@ main{
     text-decoration: none;
     color:white;
     font-size:15px;
+}
+
+#more_curation_link img{
+    transform: translate(3px, 3px);
 }
 
 
@@ -740,6 +937,9 @@ main{
     transform: translate(2px, 1px);
 }
 
+.main__theatherInfo_notice div div:nth-child(2){
+    border-left:1px solid rgb(204, 204, 204);
+}
 
 .main__theather_qna nav ul{
     margin-top:50px;
@@ -814,18 +1014,24 @@ footer{
     margin-right: 15px;
 }
 
-.footer__right div{
+.footer__dropdown_menu{
     display: flex;
-    border : 3px solid rgb(90, 90, 90);
-    padding : 2px;
-    border-radius: 15%;
+    border : 1px solid rgb(199, 199, 199);
+    padding : 3px;
+    padding-left: 8px;
+    border-radius: 35px;
     margin: 24px;
 }
 
-.footer__right div a{
+.footer__dropdown_menu a{
     font-size: 12px;
+    line-height: 20px;
     text-decoration: none;
     color:rgb(90, 90, 90);
+}
+
+.footer__dropdown_menu a img{
+    transform: translate(1px,3px);
 }
 
 .footer__right_sns ul{
@@ -845,4 +1051,99 @@ footer{
 .footer__right_sns ul{
     display : flex;
     justify-content: center;
+}
+
+.footer__dropdown{
+    position:relative;
+}
+
+.dropdown_search_theather_top{
+    display: flex;
+}
+
+.dropdown_search_theather_top div{
+    font-size: 25px;
+}
+
+#dropdown_search_theather_closebutton{
+    margin-left:820px;
+}
+
+.footer__dropdown_content{
+    position: absolute;
+    display: none;
+    bottom:360px;
+    right: 0px;
+    width:1000px;
+    height: 500px;
+}
+
+.dropdown_search_theather_table{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top:15px;
+    border:1px solid rgb(82, 82, 82);
+}
+
+.dropdown_search_theather{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color:white;
+}
+
+.theather_area b{
+    font-size: 14px;
+}
+
+.theather_area{
+    width: 150px;
+}
+
+.theather_list{
+    display: flex;
+}
+
+.theather_city{
+    width:800px;
+    margin: 5px 0px;
+}
+
+.theather_area
+{
+    line-height: 60px;
+}
+.theather_city nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.theather_city nav ul li{
+    margin: 3px;
+    padding: 0;
+    height: 25px;
+}
+
+.theather_city nav ul li a{
+    font-size: 12px;
+    margin-right: 15px;
+    color:rgb(199, 199, 199);
+    text-decoration: none;
+    height: 10px;
+}
+
+.dropdown_search_theather_bg{
+    position: absolute;
+    width: 200vw;
+    left:-50vw;
+    height: 850px;
+    bottom:-310px;
+    background-color: rgb(49, 49, 49);
+}
+
+.footer__right:hover .footer__dropdown_content{
+    display: flex;
 }

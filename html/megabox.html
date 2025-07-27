@@ -156,7 +156,40 @@
               </div>
             </div>
             <div>
-              <a href="#" id="header__side_searchbutton"><img src="../img/header/header_side_searchbutton.png"></a>
+              <div class = "header__dropdown_menu">
+                <a href="#" id="header__side_searchbutton"><img src="../img/header/header_side_searchbutton.png"></a>
+                <div class = "header__dropdown_searchmovie">
+                  <div id="header__search_closebutton">
+                    <img src="../img/header/header-close.png">
+                  </div>
+                  <div id="header__searchmovie_bg"></div>
+                  <section class="header__searchmovie_section">
+                    <div class="header__searchmovie_left">
+                      <div class="header__searchmovie_left_top">
+                        <a href="#">예매율 순</a>
+                        <a href="#">메가박스 관객순</a>
+                      </div>
+                      <div class="header__searchmovie_left_bottom">
+                        <div><img src="../img/movie/movie_좀비딸.jpg"></div>
+                        <div>
+                          <nav>
+                            <ul>
+                              <li><em>1</em><a href="">좀비딸</a></li>
+                              <li><em>2</em><a href="">F1 더 무비</a></li>
+                              <li><em>3</em><a href="">전지적 독자 시점</a></li>
+                              <li><em>4</em><a href="">판타스틱 4: 새로운 출발</a></li>
+                              <li><em>5</em><a href="">킹 오브 킹스</a></li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                    <div class ="header__searchmovie_right">
+                      <div><input type="text" placeholder="영화를 검색하세요"><a href=""><img src="../img/header/header_side_searchbutton.png"></a></div>
+                    </div>
+                  </section>
+                </div>
+              </div>
             </div>
           </div>
           <nav>
@@ -175,7 +208,6 @@
                 <div class="header__dropdown_menu">
                   <a href="#">예매</a>
                 </div>
-                
                 <div class="menu_bar"></div>
                 <div class="dropdown-content">
                   <div class="menu_bg"></div>
@@ -251,7 +283,7 @@
             <a href="#" id="header__side_calendarbutton"><img src="../img/header/header_side_calendarbutton.png"></a>
             <div class="header__dropdown">
                 <div class="header__dropdown_menu">
-                  <a href="#" id="header__side_mypagebutton"><img src="../img/header/header_side_myPagebutton.png"><div class="dropdown-content"><div id="login_menu_close">X</div></div></a>
+                  <a href="#" id="header__side_mypagebutton"><img src="../img/header/header_side_myPagebutton.png"><div class="dropdown-content"><img src="../img/header/header-close.png" id="login_menu_close"></div></a>
                 </div>
                 <div class="dropdown-content" id="dropdown-content-login">
                   <div id="login_menu_bg"></div>
@@ -278,11 +310,17 @@
               <div class="movie_box">
                 <div class="movie_box_img">
                   <a href="#"><img src="../img/movie/movie_좀비딸.jpg"></a>
+                  <div class="movie_box_number"><em>1</em></div>
                   <div class ="movie_box_img_info">
-                    "나의 딸은 좀비다. 이 세상 마지막 남은 유일한 좀비"<br><br>
-                    댄스 열정을 불태우는 사춘기 딸 '수아'와 함께 티격태격 일상을 보내는
-                    맹수 전문 사육사 '정환'.<br>
-                    어느날 전 세계를 강타한 좀비 바
+                    <div class = "movie_box_img_info_text">
+                      "나의 딸은 좀비다. 이 세상 마지막 남은 유일한 좀비"<br><br>
+                      댄스 열정을 불태우는 사춘기 딸 '수아'와 함께 티격태격 일상을 보내는
+                      맹수 전문 사육사 '정환'.<br>
+                      어느날 전 세계를 강타한 좀비 바
+                    </div>
+                    <div class = "movie_box_img_info_text_bottom">
+                      <div class = "movie_box_img_info_text_bottom_text">관람평 <div>8.9</div> </div>
+                    </div>
                   </div>
                 </div>
                 <div class="movie_box_bottom">                  
@@ -295,10 +333,16 @@
               <div class="movie_box">
                 <div class="movie_box_img">
                   <a href="#"><img src="../img/movie/movie_f1.jpg"></a>
+                  <div class="movie_box_number"><em>2</em></div>
                   <div class ="movie_box_img_info">
-                    최고가 되지 못한 전설 VS 최고가 되고 싶은 루키<br><br>
-                    한때 주목받는 유망주였지만 끔찍한 사고로 F1에서 우승하지 못하고<br>
-                    한순간에 추락한 드라이버 '소니
+                    <div class = "movie_box_img_info_text">
+                      최고가 되지 못한 전설 VS 최고가 되고 싶은 루키<br><br>
+                      한때 주목받는 유망주였지만 끔찍한 사고로 F1에서 우승하지 못하고<br>
+                      한순간에 추락한 드라이버 '소니
+                    </div>
+                    <div class = "movie_box_img_info_text_bottom">
+                      <div class = "movie_box_img_info_text_bottom_text">관람평 <div>9.5</div> </div>
+                    </div>
                   </div>
                 </div>
                 <div class="movie_box_bottom">
@@ -311,9 +355,15 @@
               <div class="movie_box">
                 <div class="movie_box_img">
                   <a href="#"><img src="../img/movie/movie_전지적.jpg"></a>
+                  <div class="movie_box_number"><em>3</em></div>
                   <div class ="movie_box_img_info">
-                    10년 이상 연재된 소설이 완결된 날 소설 속 세계가 현실이 되어 버리고,
-                    유일한 독자였던 '유종혁' 그리고 동료들과 함께 멸망한 세계에서 살아남기 위한 이야기
+                    <div class = "movie_box_img_info_text">
+                      10년 이상 연재된 소설이 완결된 날 소설 속 세계가 현실이 되어 버리고,
+                      유일한 독자였던 '유종혁' 그리고 동료들과 함께 멸망한 세계에서 살아남기 위한 이야기
+                    </div>
+                    <div class = "movie_box_img_info_text_bottom">
+                      <div class = "movie_box_img_info_text_bottom_text">관람평 <div>7.9</div> </div>
+                    </div>
                   </div>
                 </div>
                 <div class="movie_box_bottom">
@@ -326,11 +376,17 @@
               <div class="movie_box">
                 <div class="movie_box_img">
                   <a href="#"><img src="../img/movie/movie_판타스틱4.jpg"></a>
+                  <div class="movie_box_number"><em>4</em></div>
                   <div class ="movie_box_img_info">
-                    세상을 뒤흔들 우주적 사건 발생<br>
-                    2025년 7월, 마블의 가장 '판타스틱'한 팀이 온다!<br><br>
-                    전 세계적인 관심 속 우주로 떠난 4명의 엘리트 우주비행사<br>
-                    '리드 리처드', '수잔스톰','조니
+                    <div class = "movie_box_img_info_text">
+                      세상을 뒤흔들 우주적 사건 발생<br>
+                      2025년 7월, 마블의 가장 '판타스틱'한 팀이 온다!<br><br>
+                      전 세계적인 관심 속 우주로 떠난 4명의 엘리트 우주비행사<br>
+                      '리드 리처드', '수잔스톰','조니
+                    </div>
+                    <div class = "movie_box_img_info_text_bottom">
+                      <div class = "movie_box_img_info_text_bottom_text">관람평 <div>8.1</div> </div>
+                    </div>
                   </div>
                 </div>
                 <div class="movie_box_bottom">
@@ -345,10 +401,10 @@
           <div class="header__movie_bottom_section">
             <nav>
               <ul>
-                <li><input type="text" name="moviebox_search_name" placeholder="영화명을 입력해 주세요" id="moviebox_search_name"><a href="">검색</a></li>
-                <li><a href="#">상영시간표</a></li>
-                <li><a href="#">박스오피스</a></li>
-                <li><a href="#">빠른예매</a></li>
+                <li><div id="input_moviebox_search_name"><input type="text" name="moviebox_search_name" placeholder="영화명을 입력해 주세요" id="moviebox_search_name"><a href=""><img src="../img/header/header-moviebox-search-white.png"></a></div></li>
+                <li class="movie_bottom_section_list"><a href="#"><img src="../img/header/header-moviebox-schedule-main.png" class="moviebox_bottem_linkimg">상영시간표</a></li>
+                <li class="movie_bottom_section_list"><a href="#"><img src="../img/header/header-moviebox-boxoffice-main.png" class="moviebox_bottem_linkimg">박스오피스</a></li>
+                <li class="movie_bottom_section_list"><a href="#"><img src="../img/header/header-moviebox-quick-reserv.png" class="moviebox_bottem_linkimg">빠른예매</a></li>
               </ul>
             </nav>
           </div>
@@ -463,12 +519,218 @@
         <div class="footer__left_bottom">
          <img src="../img/footer/footer_logo.png"></img>
           <div>서울특별시 강남구 테헤란로 87길 22 도심공항터미널 건물 408호 ARS 1544-0070 대표이메일 m.dreamcenter@partner.megabox.co.kr
-대표자명 홍정인, 남용석 · 개인정보보호책임자 김수현 · 사업자등록번호 211-86-59478 · 통신판매업신고번호 2025-서울강남-00722
-COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved</div>
+            대표자명 홍정인, 남용석 · 개인정보보호책임자 김수현 · 사업자등록번호 211-86-59478 · 통신판매업신고번호 2025-서울강남-00722
+            COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved</div>
         </div>
       </div>
       <div class="footer__right">
-        <div><a href=""><img src="../img/footer/footer_search.png"> 극장찾기</a></div>
+        <div class="footer__dropdown">
+          <div class="footer__dropdown_menu"><a href=""><img src="../img/footer/footer_search.png"> 극장찾기</a></div>
+          <div class="footer__dropdown_content">
+            <div class="dropdown_search_theather_bg"></div>
+            <div class="dropdown_search_theather">
+              <div class="dropdown_search_theather_top">
+                <div>메가박스 극장 찾기</div>
+                <div id="dropdown_search_theather_closebutton"><img src="../img/header/header-close.png" alt=""></div>
+              </div>
+              <div class="dropdown_search_theather_table">
+                <div class="theather_list">
+                  <div class="theather_area"><b>서울</b></div>
+                  <div  class="theather_city">
+                    <nav>
+                      <ul>
+                        <li><a href="#">강남</a></li>
+                        <li><a href="#">강동</a></li>
+                        <li><a href="#">구의이스트폴</a></li>
+                        <li><a href="#">군자</a></li>
+                        <li><a href="#">더부티크목동현대백화점</a></li>
+                        <li><a href="#">동대문</a></li>
+                        <li><a href="#">마곡</a></li>
+                        <li><a href="#">목동</a></li>
+                        <li><a href="#">상봉</a></li>
+                        <li><a href="#">상암월드컵경기장</a></li>
+                        <li><a href="#">성수</a></li>
+                        <li><a href="#">센트럴</a></li>
+                        <li><a href="#">송파파크하비오</a></li>
+                        <li><a href="#">신촌</a></li>
+                        <li><a href="#">이수</a></li>
+                        <li><a href="#">창동</a></li>
+                        <li><a href="#">코엑스</a></li>
+                        <li><a href="#">홍대</a></li>
+                        <li><a href="#">화곡</a></li>
+                        <li><a href="#">ARTNINE</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="theather_list">
+                  <div class="theather_area"><b>경기</b></div>
+                  <div class="theather_city">
+                    <nav>
+                      <ul>
+                        <li><a href="">고양스타필드</a></li>
+                        <li><a href="">광명AK플라자</a></li>
+                        <li><a href="">광명소하</a></li>
+                        <li><a href="">금정AK플라자</a></li>
+                        <li><a href="">김포한강신도시</a></li>
+                        <li><a href="">남양주</a></li>
+                        <li><a href="">남양주현대아울렛스페이스원</a></li>
+                        <li><a href="">동탄</a></li>
+                        <li><a href="">동탄역</a></li>
+                        <li><a href="">미사강변(하남종합운동장)</a></li>
+                        <li><a href="">백석벨라시타</a></li>
+                        <li><a href="">별내</a></li>
+                        <li><a href="">부천스타필드시티</a></li>
+                        <li><a href="">분당</a></li>
+                        <li><a href="">성남모란</a></li>
+                        <li><a href="">수원</a></li>
+                        <li><a href="">수원AK플라자(수원역)</a></li>
+                        <li><a href="">수원남문</a></li>
+                        <li><a href="">수원스타필드</a></li>
+                        <li><a href="">수원이계</a></li>
+                        <li><a href="">수원호매실</a></li>
+                        <li><a href="">시흥배곧</a></li>
+                        <li><a href="">시흥정왕</a></li>
+                        <li><a href="">안산중앙</a></li>
+                        <li><a href="">안성스타필드</a></li>
+                        <li><a href="">양주(휴관)</a></li>
+                        <li><a href="">용인테크노밸리</a></li>
+                        <li><a href="">의정부민락</a></li>
+                        <li><a href="">킨텍스</a></li>
+                        <li><a href="">파주금촌</a></li>
+                        <li><a href="">파주운정</a></li>
+                        <li><a href="">평택비전</a></li>
+                        <li><a href="">하남스타필드</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="theather_list">
+                  <div class="theather_area"><b>인천</b></div>
+                  <div class="theather_city">
+                    <nav>
+                      <ul>
+                        <li><a href="">검단</a></li>
+                        <li><a href="">송도(트리플스트리트)</a></li>
+                        <li><a href="">영종</a></li>
+                        <li><a href="">영종하늘도시</a></li>
+                        <li><a href="">인천논현</a></li>
+                        <li><a href="">인천학익(시티오씨엘)</a></li>
+                        <li><a href="">청라지젤(휴관)</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="theather_list">
+                  <div class="theather_area"><b>대전/충청/세종</b></div>
+                  <div class="theather_city">
+                    <nav>
+                      <ul>
+                        <li><a href="">공주</a></li>
+                        <li><a href="">논산</a></li>
+                        <li><a href="">대전</a></li>
+                        <li><a href="">대전신세계아트앤사이언스</a></li>
+                        <li><a href="">대전유성</a></li>
+                        <li><a href="">대전중앙로</a></li>
+                        <li><a href="">대전현대아울렛</a></li>
+                        <li><a href="">세종(조치원)</a></li>
+                        <li><a href="">세종나성</a></li>
+                        <li><a href="">세종청사</a></li>
+                        <li><a href="">오창</a></li>
+                        <li><a href="">진천</a></li>
+                        <li><a href="">천안</a></li>
+                        <li><a href="">청주사창</a></li>
+                        <li><a href="">청주성안길</a></li>
+                        <li><a href="">충주연수</a></li>
+                        <li><a href="">흥성내포</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="theather_list">
+                  <div class="theather_area"><b>부산/대구/경상</b></div>
+                  <div class="theather_city">
+                    <nav>
+                      <ul>
+                        <li><a href="">경북도청</a></li>
+                        <li><a href="">경산하양</a></li>
+                        <li><a href="">구미강동</a></li>
+                        <li><a href="">김천</a></li>
+                        <li><a href="">남포항</a></li>
+                        <li><a href="">대구세븐벨리(칠곡)</a></li>
+                        <li><a href="">대구신세계(동대구)</a></li>
+                        <li><a href="">대구이시아</a></li>
+                        <li><a href="">대구프리미엄만경관</a></li>
+                        <li><a href="">덕천</a></li>
+                        <li><a href="">마산(경남대)</a></li>
+                        <li><a href="">문경</a></li>
+                        <li><a href="">부산극장</a></li>
+                        <li><a href="">부산대</a></li>
+                        <li><a href="">북대구(칠곡)</a></li>
+                        <li><a href="">사상</a></li>
+                        <li><a href="">삼천포</a></li>
+                        <li><a href="">서면대한</a></li>
+                        <li><a href="">양산</a></li>
+                        <li><a href="">양산증산</a></li>
+                        <li><a href="">울산</a></li>
+                        <li><a href="">정관(휴관)</a></li>
+                        <li><a href="">진주(중앙)</a></li>
+                        <li><a href="">창원</a></li>
+                        <li><a href="">창원내서</a></li>
+                        <li><a href="">포항</a></li>
+                        <li><a href="">해운대(장산)</a></li>
+                        <li><a href="">화명</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="theather_list"> 
+                  <div class="theather_area"><b>광주/전라</b></div>
+                  <div class="theather_city">
+                    <nav>
+                      <ul>
+                        <li><a href="">광주상무</a></li>
+                        <li><a href="">광주하남</a></li>
+                        <li><a href="">목포하당(포르모)</a></li>
+                        <li><a href="">순천</a></li>
+                        <li><a href="">여수웅천</a></li>
+                        <li><a href="">전대(광주)</a></li>
+                        <li><a href="">전주객사</a></li>
+                        <li><a href="">전주혁신</a></li>
+                        <li><a href="">첨단</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="theather_list">
+                  <div class="theather_area"><b>강원</b></div>
+                  <div class="theather_city">
+                    <nav>
+                      <ul>
+                        <li><a href="">남춘천</a></li>
+                        <li><a href="">속초</a></li>
+                        <li><a href="">원주혁신</a></li>
+                        <li><a href="">춘천석사</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="theather_list">
+                  <div class="theather_area"><b>제주</b></div>
+                  <div class="theather_city">
+                    <nav>
+                      <ul>
+                        <li><a href="">제주삼화</a></li>
+                        <li><a href="">제주서귀포</a></li>
+                        <li><a href="">제주아라</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <nav class="footer__right_sns">
           <ul>
            <li><a href=""><img src="../img/footer/footer_icon_1.png"></a></li>

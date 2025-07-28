@@ -36,6 +36,7 @@ header{
     background-color: rgba(10, 10, 10, 0.9);
 }
 
+/* 메뉴 */
 .header__container_menu{
     display:flex;
     height:120px;
@@ -103,7 +104,7 @@ header{
 }
 
 #header__side_calendarbutton{
-    transform: translate(0, 4px);
+    transform: translate(0, 2px);
 }
 
 .header__sitemap{
@@ -140,8 +141,8 @@ header{
 
 #header__sitemap_bg{
     position: absolute;
-    width: 200vw;
-    left:-50vw;
+    width: 150vw;
+    left:-20vw;
     height: 650px;
     background-color: rgb(36, 36, 36);
     z-index: -1;
@@ -196,11 +197,11 @@ header{
     flex-direction: column;
     width : 120px;
     margin: 0;
-    transform: translate(-40px,0);
+    transform: translate(-50px,0);
 }
 
 .header__sitemap nav ul li{
-    width : 140px;
+    width : 150px;
     height: 30px;
     text-align: center;
     margin: 0;
@@ -229,8 +230,8 @@ header{
 
 #header__searchmovie_bg{
     position: absolute;
-    width: 200vw;
-    left:-50vw;
+    width: 150vw;
+    left:-22vw;
     height: 350px;
     top:55px;
     background-color: rgb(53, 31, 103);
@@ -383,11 +384,11 @@ header{
 }
 
 #menu_dropdown_loginlink{
-  position: absolute;  /* 위치를 부모 기준으로 절대 위치 설정  */
-  padding-top: 0px;
-  top:50px;
-  left:740px;
-  width: 100vw;
+    position: absolute;  /* 위치를 부모 기준으로 절대 위치 설정  */
+    padding-top: 0px;
+    top:50px;
+    left:740px;
+    width: 100vw;
 }
 
 #login_text_link{
@@ -437,6 +438,8 @@ header{
     display: flex;
     flex:1;
 }
+
+/* 영화 순위 */
 
 .header__movie_section{
     margin: auto;
@@ -522,6 +525,9 @@ header{
    position: relative;
 }
 
+.movie_box_img a img{
+    border-radius: 5px;
+}
 
 .movie_box_img_info{
     position: absolute;
@@ -532,6 +538,8 @@ header{
     display: none;
     background-color: rgba(0, 0, 0, 0.74);
     padding: 18px;
+    
+    border-radius: 5px;
 }
 
 .movie_box_img_info_text{
@@ -650,7 +658,7 @@ header{
     color:white;
     border:0px;
     outline: none;
-    width : 130px;
+    width : 135px;
     padding: 1px;
     margin-right: 3px;
     font-size: 13px;
@@ -659,7 +667,7 @@ header{
 
 #input_moviebox_search_name{
     height:32px;
-    width: 170px;
+    width: 180px;
     padding-bottom: 3px;
     border-bottom: 1px solid rgb(82, 82, 82);
     background-color: rgba(0, 0, 0, 0.253);
@@ -668,7 +676,7 @@ header{
 #input_moviebox_search_name img{
     height: 15px;
     width:15px;
-    margin: 0;
+    margin-left: 10px;
     padding:0;
 }
 
@@ -685,7 +693,7 @@ header{
 .moviebox_bottem_linkimg{
     width : 20px;
     height: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-right: 6px;
     transform: translate(0, 3px);
 }
@@ -718,7 +726,7 @@ header{
 main{
     height : 1300px;
 }
-
+/* 큐레이션 */
 .main__container_curation{
     width: 100%;
     min-width: 1000px;
@@ -843,7 +851,7 @@ main{
 }
 
 .movie_curation_box ul li div{
-    font-size: 15px;
+    font-size: 13px;
     text-align: center;
 }
 
@@ -851,7 +859,7 @@ main{
     height: 75%;
 }
 
-
+/* 영화관 정보 */
 .main__container_theatherinfo{
     font-size: 30px;
     margin-left: 100px;
@@ -925,9 +933,14 @@ main{
     display: flex;
 }
 
+.main__theatherInfo_notice_left b{
+    margin: 0;
+    color:rgb(3, 124, 148);
+}
+
 .main__theatherInfo_notice_right{
     display: flex;
-    margin-left: 350px;
+    margin-left: 310px;
 }
 
 .main__theatherInfo_notice_right div img{
@@ -948,7 +961,7 @@ main{
     list-style: none;
 }
 .main__theather_qna nav ul li img{
-    margin-left:20px;
+    margin-left:26px;
     width: 55px;
     height: 50px;
 }
@@ -959,7 +972,7 @@ main{
 
 .main__theather_qna nav ul li div{
     font-size: 12px;
-    width: 100px;
+    width: 110px;
     text-align: center;
     color:rgb(66, 66, 66);
 }
@@ -1063,10 +1076,12 @@ footer{
 
 .dropdown_search_theather_top div{
     font-size: 25px;
+    height:55px;
 }
 
 #dropdown_search_theather_closebutton{
-    margin-left:820px;
+    position: absolute;
+    right: 0;
 }
 
 .footer__dropdown_content{
@@ -1137,8 +1152,8 @@ footer{
 
 .dropdown_search_theather_bg{
     position: absolute;
-    width: 200vw;
-    left:-50vw;
+    width: 150vw;
+    left:-23.6vw;
     height: 850px;
     bottom:-310px;
     background-color: rgb(49, 49, 49);

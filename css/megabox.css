@@ -1,51 +1,51 @@
 *{
-    margin:0;
-    padding:0;
+  margin:0;
+  padding:0;
 }
 
 /* 헤더 */
 header{
-    padding:0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color:white; 
-    height:900px;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color:white; 
+  height:900px;
 }
 
 #header__backgroundImage{
-    background-image: url("../img/header/header_background.jpg");
-    position:absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height:900px;
-    z-index: -3;
-    filter: blur(10px);
+  background-image: url("../img/header/header_background.jpg");
+  position:absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height:900px;
+  z-index: -3;
+  filter: blur(10px);
 }
 
 #header__layerColor{
-    /* background-image: url("../img/header/header_background_layer.jpg"); */
-    position:absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height:900px;
-    z-index: -2;
-    background-color: rgba(10, 10, 10, 0.9);
+  /* background-image: url("../img/header/header_background_layer.jpg"); */
+  position:absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height:900px;
+  z-index: -2;
+  background-color: rgba(10, 10, 10, 0.9);
 }
 
 /* 메뉴 */
 .header__container_menu{
-    display:flex;
-    height:120px;
-    padding:0;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.336);
-    z-index: 1;
-    position:relative;
-    width: 100%;
+  display:flex;
+  height:120px;
+  padding:0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.336);
+  z-index: 1;
+  position:relative;
+  width: 100%;
 }
 
 body{
@@ -79,7 +79,7 @@ header{
 }
 
 .header__menu_bar_top a:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #header__menu_bar_top_left{
@@ -163,11 +163,11 @@ header{
 }
 
 .header__searchmovie_left_bottom a:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .header__menu_dropdown_menu_content a:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .header__menu_dropdown_menu{
@@ -221,8 +221,8 @@ header{
 }
 
 .header__menu_dropdown:hover .header__menu_dropdown_menu a{
-    padding-bottom: 15px;
-    border-bottom: 2px solid white;
+  padding-bottom: 15px;
+  border-bottom: 2px solid white;
 }
 
 
@@ -247,42 +247,42 @@ header{
 }
 
 .header__sitemap div{
-    font-size: 15px;
+  font-size: 15px;
 }
 .header__sitemap a{
-    color:white;
-    text-decoration: none;
-    font-size: 12px;
+  color:white;
+  text-decoration: none;
+  font-size: 12px;
 }
 
 .header__sitemap a:hover{
-    color:rgb(5, 134, 255);
-    text-decoration: underline;
+  color:rgb(5, 134, 255);
+  text-decoration: underline;
 }
 
 .header__sitemap_title{
-    color:white;
-    border-top: 1px solid rgb(82, 82, 82);
-    border-bottom: 1px solid rgb(82, 82, 82);
-    text-align: center;
-    padding : 10px 0px;
-    font-size: 15px;
+  color:white;
+  border-top: 1px solid rgb(82, 82, 82);
+  border-bottom: 1px solid rgb(82, 82, 82);
+  text-align: center;
+  padding : 10px 0px;
+  font-size: 15px;
 }
 
 #header__sitemap_text{
-    color:white;
-    width: 100%;
-    margin-top: 70px;
-    margin-left: 25px;
-    font-size: 20px;
-    z-index: 4;
+  color:white;
+  width: 100%;
+  margin-top: 70px;
+  margin-left: 25px;
+  font-size: 20px;
+  z-index: 4;
 }
 
 .header__sitemap_set{
-    display: flex;
-    flex-direction: column;
-    margin : 20px 30px;
-    z-index: 4;
+  display: flex;
+  flex-direction: column;
+  margin : 20px 30px;
+  z-index: 4;
 }
 
 .header__sitemap_row{
@@ -290,9 +290,9 @@ header{
 }
 
 .header__sitemap_column{
-    display: flex;
-    flex-wrap: wrap;
-    width:950px;
+  display: flex;
+  flex-wrap: wrap;
+  width:950px;
 }
 
 .header__sitemap nav{
@@ -300,37 +300,37 @@ header{
 }
 
 .header__sitemap nav ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    width : 150px;
-    margin: 0;
-    transform: translate(-6px,0);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width : 150px;
+  margin: 0;
+  transform: translate(-6px,0);
 }
 
 .header__sitemap nav ul li{
-    width : 150px;
-    height: 30px;
-    text-align: center;
-    margin: 0;
+  width : 150px;
+  height: 30px;
+  text-align: center;
+  margin: 0;
 }
 
 .header__sitemap{
-    position: absolute;
-    display : flex;
-    flex-wrap: wrap;
-    width : 1200px;
-    margin-top: 10px;
+  position: absolute;
+  display : flex;
+  flex-wrap: wrap;
+  width : 1200px;
+  margin-top: 10px;
 }
 
 .header__menu_side_menu_button{
-    position : absolute;
-    transform: translate(8px, 15px);
+  position : absolute;
+  transform: translate(8px, 15px);
 }
 
 #header__menu_closebutton{
-    position:absolute;
-    transform: translate(52px, 7px);
+  position:absolute;
+  transform: translate(52px, 7px);
 }
 
 .header__menu_dropdown_side_menu{
@@ -369,9 +369,9 @@ header{
 }
 
 .header__menu_side_searchmovie_button{
-    position : absolute;
-    top : 0;
-    transform: translate(0px, 18px);
+  position : absolute;
+  top : 0;
+  transform: translate(0px, 18px);
 }
 
 .header__menu_side_searchmovie_button a img{
@@ -397,64 +397,64 @@ header{
 }
 
 .header__searchmovie_left{
-    display: flex;
-    flex-direction: column;
-    width : 400px;
+  display: flex;
+  flex-direction: column;
+  width : 400px;
 }
 
 .header__searchmovie_left_top{
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .header__searchmovie_left_top a{
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .header__searchmovie_left_top a:hover{
-    border-bottom:2px solid white;
+  border-bottom:2px solid white;
 }
 
 
 .header__searchmovie_left_bottom{
-    display : flex;
+  display : flex;
 }
 
 .header__searchmovie_left_bottom img{
-    width : 160px;
+  width : 160px;
 }
 
 .header__searchmovie_left_bottom nav ul{
-    display: flex;
-    flex-direction: column;
-    width: 170px;
-    margin-left: 30px;
-    margin-top : 20px;
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  margin-left: 30px;
+  margin-top : 20px;
 }
 
 .header__searchmovie_left_bottom nav ul li{
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .header__searchmovie_left_bottom nav ul li b{
-    font-size: 20px;
-    margin-right: 5px;
+  font-size: 20px;
+  margin-right: 5px;
 }
 
 .header__searchmovie_right{
-    margin: auto;
-    width : 380px;
-    margin-left: 100px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.596);
+  margin: auto;
+  width : 380px;
+  margin-left: 100px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.596);
 }
 
 .header__searchmovie_right input{
-    background-color: rgba(0, 0, 0, 0);
-    color:white;
-    outline:none;
-    width : 350px;
-    height : 40px;
-    font-size: 25px;
-    border: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  color:white;
+  outline:none;
+  width : 350px;
+  height : 40px;
+  font-size: 25px;
+  border: 0px;
 }
 
 .header__searchmovie_section{
@@ -515,31 +515,31 @@ header{
 }
 
 #login_text_link{
-    border-radius: 8%;
-    border : 2px solid white;
-    padding : 7px;
-    font-size: 12px;
-    color :white;
-    text-decoration: none;
+  border-radius: 8%;
+  border : 2px solid white;
+  padding : 7px;
+  font-size: 12px;
+  color :white;
+  text-decoration: none;
 }
 #join_text_link{
-    text-decoration: underline;
-    font-size: 12px;
-    color :rgb(187, 187, 187);
+  text-decoration: underline;
+  font-size: 12px;
+  color :rgb(187, 187, 187);
 }
 
 #header__login_closebutton{
-    z-index: 4;
-    margin-top : 7px;
-    padding: 0px;
-    transform: translate(3px, 7px);
+  z-index: 4;
+  margin-top : 7px;
+  padding: 0px;
+  transform: translate(3px, 7px);
 }
 
 #dropdown-content-login{
-    position:absolute;
-    transform:translate(-670px,37px);
-    width : 500px;
-    justify-content: center;
+  position:absolute;
+  transform:translate(-670px,37px);
+  width : 500px;
+  justify-content: center;
 }
 
 
@@ -548,8 +548,8 @@ header{
 }
 
 .header__menu_side_login_button a{
-    position:absolute;
-    transform: translate(9px, 17px);
+  position:absolute;
+  transform: translate(9px, 17px);
 }
 
 .header__menu_side_login_button a img{
@@ -570,288 +570,287 @@ header{
 }
 
 #menu_dropdown_loginlink{
-    position: absolute;  /* 위치를 부모 기준으로 절대 위치 설정  */
-    padding-top: 0px;
-    top:38px;
-    left: 80px;
-    width: 500px;
+  position: absolute;  /* 위치를 부모 기준으로 절대 위치 설정  */
+  padding-top: 0px;
+  top:38px;
+  left: 80px;
+  width: 500px;
 }
 
 /* 영화 순위 */
 .header__container_movie{
-    display: flex;
-    flex:1;
+  display: flex;
+  flex:1;
 }
 
 .header__movie_section{
-    margin: auto;
-    width: 1000px;
-    height: 90%;
+  margin: auto;
+  width: 1000px;
+  height: 90%;
 }
 
 .header__movie_top{
-    text-align: center;
-    margin-left:380px;
-    height: 10%;
-    display: flex;
+  text-align: center;
+  margin-left:380px;
+  height: 10%;
+  display: flex;
 }
 
 .header__movie_top div{
-    position:relative;
-    line-height: 80px;
-    font-size : 20px;
-    width : 100px;
-    left : 80px;
+  position:relative;
+  line-height: 80px;
+  font-size : 20px;
+  width : 100px;
+  left : 80px;
 }
 
 .header__movie_top div div{
-    position : absolute;
-    background-color: rgba(255, 255, 255, 0.247);
-    height: 3px;
-    width : 100%;
-    top : 60px;
-    left : 0px;
+  position : absolute;
+  background-color: rgba(255, 255, 255, 0.247);
+  height: 3px;
+  width : 100%;
+  top : 60px;
+  left : 0px;
 }
 
 #more_movie_button{
-    position: relative;
-    font-size : 13px;
-    color :white;
-    text-decoration: none;
+  position: relative;
+  font-size : 13px;
+  color :white;
+  text-decoration: none;
 }
 
 #more_movie_button:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #more_movie_button div{
-    margin-left:280px;
-    font-size : 13px;
-    width: 150px;
+  margin-left:280px;
+  font-size : 13px;
+  width: 150px;
 }
 
 #more_movie_button img{
-    position: absolute;
-    top : 32px;
-    padding-left : 8px;
+  position: absolute;
+  top : 32px;
+  padding-left : 8px;
 }
 
 .header__movie_center{
-    display: flex;
-    height: 55%;
-    justify-content: space-between;
+  display: flex;
+  height: 55%;
+  justify-content: space-between;
 }
 
 .header__movie_center ul{
-    list-style: none;
-    display: flex;
-    flex:1;
-    justify-content: space-around;
+  list-style: none;
+  display: flex;
+  flex:1;
+  justify-content: space-around;
 }
 .header__movie_center ul li{
-    flex:1;
+  flex:1;
 }
 
 .header__movie_center ul li div img{
-    width : 100%;
-    height: 80%;
+  width : 100%;
+  height: 80%;
 }
 
 .movie_box{
-   display: flex;
-   flex-direction: column;
-   margin:20px;
-   height: 80%;
+  display: flex;
+  flex-direction: column;
+  margin:20px;
+  height: 80%;
 }
 .movie_box_img{
-   position: relative;
+  position: relative;
 }
 
 .movie_box_img a img{
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .movie_box_img_info{
-    position: absolute;
-    left: 0;
-    top:0;
-    width: 175px;
-    height: 269px;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.74);
-    padding: 18px;
-    
-    border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 175px;
+  height: 269px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.74);
+  padding: 18px;
+  border-radius: 5px;
 }
 
 .movie_box_img_info_text{
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .movie_box_img_info_text_bottom{
-    position : absolute;
-    top : 250px;
-    width : 180px;
+  position : absolute;
+  top : 250px;
+  width : 180px;
 }
 
 .movie_box_img_info_text_bottom_text{
-    font-size: 15px;
-    line-height: 50px;
-    border-top: 1px solid rgba(255, 255, 255, 0.233);
-    padding-left: 35px;
+  font-size: 15px;
+  line-height: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.233);
+  padding-left: 35px;
 }
 
 .movie_box_img_info_text_bottom div div{
-    font-size: 25px;
-    margin-left: 25px;
-    line-height: 45px;
-    color : rgb(3, 124, 148)
+  font-size: 25px;
+  margin-left: 25px;
+  line-height: 45px;
+  color : rgb(3, 124, 148)
 }
 
 .movie_box_img_info_text_bottom div{
-    display: flex;
+  display: flex;
 }
 
 .movie_box_number em{
-    position: absolute;
-    top:0px;
-    left:0px;
-    margin-left: 10px;
-    margin-top:5px;
+  position: absolute;
+  top:0px;
+  left:0px;
+  margin-left: 10px;
+  margin-top:5px;
 }
 
 .movie_box_img:hover .movie_box_img_info {
-    display:inline;
+  display:inline;
 }
 
 .movie_box a{
-    height: 100%;
+  height: 100%;
 }
 .movie_box a img{
-    min-height: 305px;
+  min-height: 305px;
 }
 .movie_box_bottom{
-   display: flex;
-   margin-top : 10px;
-   height:10%;
-   width:100%;
+  display: flex;
+  margin-top : 10px;
+  height:10%;
+  width:100%;
 }
 
 
 
 .movie_box_bottom a{
-    text-decoration: none;
-    line-height: 35px;
-    color: white;
-    border-radius: 3%;
+  text-decoration: none;
+  line-height: 35px;
+  color: white;
+  border-radius: 3%;
 }
 
 .movie_likebutton{
-    border : 1px solid white;
-    border-radius: 20%;
-    background-color: rgba(0, 0, 0, 0.918);
-    font-size: 15px;
-    padding-left : 3px;
-    padding-right : 3px;
-    padding-top : 0px;
-    text-align: center;
-    height: 35px;
-    width: 60px;
+  border : 1px solid white;
+  border-radius: 20%;
+  background-color: rgba(0, 0, 0, 0.918);
+  font-size: 15px;
+  padding-left : 3px;
+  padding-right : 3px;
+  padding-top : 0px;
+  text-align: center;
+  height: 35px;
+  width: 60px;
 }
 
 
 .movie_reservationbutton{
-    flex:1;
-    font-size: 15px;
-    margin-left:20px;
-    text-align: center;
-    background-color: rgb(3, 124, 148);
-    font-size: 15px;
-    padding-bottom: 5px;
+  flex:1;
+  font-size: 15px;
+  margin-left:20px;
+  text-align: center;
+  background-color: rgb(3, 124, 148);
+  font-size: 15px;
+  padding-bottom: 5px;
 }
 
 
 .header__movie_bottom_section{
-    background-color: rgba(0, 0, 0, 0.212);
-    width:96%;
-    margin:auto;
+  background-color: rgba(0, 0, 0, 0.212);
+  width:96%;
+  margin:auto;
 }
 
 .header__movie_bottom_section nav ul{
-    display: flex;
-    margin-top : 30px;
-    height: 70px;
-    flex:1;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none; 
+  display: flex;
+  margin-top : 30px;
+  height: 70px;
+  flex:1;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none; 
 }
 
 .header__movie_bottom_section nav ul li{
-    margin: 30px;
-    height: 50%;
-    line-height: 25px;
-    text-align: center;
-    flex:1;
+  margin: 30px;
+  height: 50%;
+  line-height: 25px;
+  text-align: center;
+  flex:1;
 }
 
 #moviebox_search_name{
-    padding:0;
-    color:white;
-    border:0px;
-    outline: none;
-    width : 135px;
-    padding: 1px;
-    margin-right: 3px;
-    font-size: 13px;
-    background-color: rgba(0, 0, 0, 0);
+  padding:0;
+  color:white;
+  border:0px;
+  outline: none;
+  width : 135px;
+  padding: 1px;
+  margin-right: 3px;
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 #input_moviebox_search_name{
-    height:32px;
-    width: 180px;
-    padding-bottom: 3px;
-    border-bottom: 1px solid rgb(82, 82, 82);
-    background-color: rgba(0, 0, 0, 0.253);
+  height:32px;
+  width: 180px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgb(82, 82, 82);
+  background-color: rgba(0, 0, 0, 0.253);
 }
 
 #input_moviebox_search_name img{
-    height: 15px;
-    width:15px;
-    margin-left: 10px;
-    padding:0;
+  height: 15px;
+  width:15px;
+  margin-left: 10px;
+  padding:0;
 }
 
 .header__movie_bottom_section a{
-    font-size: 15px;
-    text-decoration: none;
-    color: white;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
 }
 
 .movie_bottom_section_list{
-    border-left: 1px solid rgba(255, 255, 255, 0.199);
+  border-left: 1px solid rgba(255, 255, 255, 0.199);
 }
 
 .moviebox_bottem_linkimg{
-    width : 20px;
-    height: 20px;
-    margin-left: 40px;
-    margin-right: 6px;
-    transform: translate(0, 3px);
+  width : 20px;
+  height: 20px;
+  margin-left: 40px;
+  margin-right: 6px;
+  transform: translate(0, 3px);
 }
 
 .moviebox_bottom_mouse{
-    margin:auto;
-    width : 10px;
-    line-height: 150px;
+  margin:auto;
+  width : 10px;
+  line-height: 150px;
 }
 
 .moviebox_bottom_mouse{
-    animation-duration: 0.7s;
-    animation-name: motion;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-delay: 1s;
+  animation-duration: 0.7s;
+  animation-name: motion;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
 }
 
 @keyframes motion {
@@ -866,477 +865,477 @@ header{
 
 /* 메인 */
 main{
-    height : 1300px;
-    background-color: white;
+  height : 1300px;
+  background-color: white;
 }
 /* 큐레이션 */
 .main__container_curation{
-    width: 100%;
-    min-width: 1000px;
-    height : 800px;
-    display: flex;
-    color:white;
-    background-color: rgb(37, 36, 81);
-    justify-content:center;
+  width: 100%;
+  min-width: 1000px;
+  height : 800px;
+  display: flex;
+  color:white;
+  background-color: rgb(37, 36, 81);
+  justify-content:center;
 }
 
 .movie_curtion_left{
-    margin-top: 50px;
-    width:300px;
+  margin-top: 50px;
+  width:300px;
 }
 
 .curation_movie_img{
-    position: relative;
+  position: relative;
 }
 
 .curation_img_layer{
-    position: absolute;
-    left: 0;
-    top:0;
+  position: absolute;
+  left: 0;
+  top:0;
 }
 
 .movie_curtion_left div b{
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 #curation_movie_img_main{
-    margin-left : 25px;
-    width:250px;
-    border-radius: 5%;
+  margin-left : 25px;
+  width:250px;
+  border-radius: 5%;
 }
 
 .movie_curation_link{
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 
 .movie_curation_link a{
-    color:white;
-    text-decoration: none;
-    padding: 6px;
-    width : 100px;
-    text-align: center;
-    border-radius: 5%;
-    font-size: 18px;
+  color:white;
+  text-decoration: none;
+  padding: 6px;
+  width : 100px;
+  text-align: center;
+  border-radius: 5%;
+  font-size: 18px;
 }
 
 #movie_curation_link_detail{
-    border:2px solid white;
+  border:2px solid white;
 }
 
 #movie_curation_link_reservation{
-    background-color: rgb(58, 118, 141);
+  background-color: rgb(58, 118, 141);
 }
 
 .movie_curtion_right{
-    margin-top: 50px;
-    width:700px;
+  margin-top: 50px;
+  width:700px;
 }
 
 .movie_curation_box{
-    display: flex;
-    position: relative;
-    margin-top: 20px;
+  display: flex;
+  position: relative;
+  margin-top: 20px;
 }
 
 .movie_curation_box ul li{
-    position: relative;
+  position: relative;
 }
 
 #more_curation_link{
-    flex:1;
-    text-align: right;
-    line-height: 20px;
-    padding:3px;
+  flex:1;
+  text-align: right;
+  line-height: 20px;
+  padding:3px;
 }
 
 #more_curation_link a{
-    text-decoration: none;
-    color:white;
-    font-size:15px;
+  text-decoration: none;
+  color:white;
+  font-size:15px;
 }
 
 #more_curation_link img{
-    transform: translate(3px, 3px);
+  transform: translate(3px, 3px);
 }
 
 
 #movie_curation_titleinfo{
-    margin:20px 10px 0px 10px;
-    font-size: 15px;
+  margin:20px 10px 0px 10px;
+  font-size: 15px;
 }
 
 #movie_curation_title{
-    padding-top: 0;
-    margin:0px 10px;
-    font-size: 35px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid rgb(90, 90, 90);
+  padding-top: 0;
+  margin:0px 10px;
+  font-size: 35px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(90, 90, 90);
 }
 
 
 #movie_curation_textcontent{
-    margin:10px;
-    font-size: 15px;
+  margin:10px;
+  font-size: 15px;
 }
 
 .movie_curation_box ul{
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .curation_movie_img
 {
-    width: 160px;
-    border-radius: 8%;
-    margin:8px;
+  width: 160px;
+  border-radius: 8%;
+  margin:8px;
 }
 
 .movie_curation_box ul li div{
-    font-size: 13px;
-    text-align: center;
+  font-size: 13px;
+  text-align: center;
 }
 
 .movie_curation_box ul li a img{
-    height: 75%;
+  height: 75%;
 }
 
 /* 영화관 정보 */
 .main__container_theatherinfo{
-    font-size: 30px;
-    margin-left: 100px;
-    color:rgb(47, 27, 121);
-    width : 1000px;
-    margin: auto;
+  font-size: 30px;
+  margin-left: 100px;
+  color:rgb(47, 27, 121);
+  width : 1000px;
+  margin: auto;
 }
 
 .main__container_theatherinfo_title{
-    margin-top: 40px;
-    margin-bottom: 15px;
+  margin-top: 40px;
+  margin-bottom: 15px;
 }
 
 .infoButton{
-    background-color: rgba(255, 255, 255, 0);
-    border :0px solid black;
+  background-color: rgba(255, 255, 255, 0);
+  border :0px solid black;
 }
 
 .infoButton:hover{
-    cursor:pointer;
+  cursor:pointer;
 }
 
 .theatherinfo_list_nav{
-    overflow: hidden;    
-    width : 900px;
-    border-radius: 5%;
+  overflow: hidden;    
+  width : 900px;
+  border-radius: 5%;
 }
 
 .theatherinfo_list{
-    display: flex;
+  display: flex;
 }
 
 .theatherinfo_list nav ul{
-    display: flex;
-    justify-content: space-between;
-    width : 1500px;
+  display: flex;
+  justify-content: space-between;
+  width : 1500px;
 }
 
 .theatherinfo_list_ul{
-    transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
 }
 
 .theatherinfo_list nav ul li{
-    display: flex;
-    width : 130px;
-    height: 130px;
-    margin : 10px;
-    border-radius: 5%;
-    overflow: hidden;
+  display: flex;
+  width : 130px;
+  height: 130px;
+  margin : 10px;
+  border-radius: 5%;
+  overflow: hidden;
 }
 
 .theatherinfo_list nav ul li img{
-    display: flex;
-    width : 130px;
-    height: 260px;
+  display: flex;
+  width : 130px;
+  height: 260px;
 }
 
 .theatherinfo_list nav ul li img:hover{
-    margin-top: -130px;
+  margin-top: -130px;
 }
 
 .theatherinfo_list a{
-    margin: auto;
+  margin: auto;
 }
 .theatherinfo_list a img{
-    width : 20px;
+  width : 20px;
 }
 
 .theatherinfo_list nav ul li{
-    list-style: none;
+  list-style: none;
 }
 
 .main__theatherInfo_notice{
-    display: flex;
-    margin-top: 20px;
-    font-size: 15px;
+  display: flex;
+  margin-top: 20px;
+  font-size: 15px;
 }
 
 .main__theatherInfo_notice *{
-    font-size: 13px;
-    margin:5px 10px;
-    color:rgb(66, 66, 66);
-    text-decoration : none;
+  font-size: 13px;
+  margin:5px 10px;
+  color:rgb(66, 66, 66);
+  text-decoration : none;
 }
 
 .main__container_theatherinfo a:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .main__theatherInfo_notice_left{
-    display: flex;
+  display: flex;
 }
 
 .main__theatherInfo_notice_left b{
-    margin: 0;
-    color:rgb(3, 124, 148);
+  margin: 0;
+  color:rgb(3, 124, 148);
 }
 
 .main__theatherInfo_notice_right{
-    display: flex;
-    margin-left: 310px;
+  display: flex;
+  margin-left: 310px;
 }
 
 .main__theatherInfo_notice_right div img{
-    height: 12px;
-    padding: 0;
-    margin : 0;
-    transform: translate(2px, 1px);
+  height: 12px;
+  padding: 0;
+  margin : 0;
+  transform: translate(2px, 1px);
 }
 
 .main__theatherInfo_notice div div:nth-child(2){
-    border-left:1px solid rgb(204, 204, 204);
+  border-left:1px solid rgb(204, 204, 204);
 }
 
 .main__theather_qna nav ul{
-    margin-top:50px;
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
+  margin-top:50px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
 }
 .main__theather_qna nav ul li img{
-    margin-left:26px;
-    width: 55px;
-    height: 50px;
+  margin-left:26px;
+  width: 55px;
+  height: 50px;
 }
 
 .main__theather_qna nav ul li a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .main__theather_qna nav ul li div{
-    font-size: 12px;
-    width: 110px;
-    text-align: center;
-    color:rgb(66, 66, 66);
+  font-size: 12px;
+  width: 110px;
+  text-align: center;
+  color:rgb(66, 66, 66);
 }
 
 .main__theather_qna a:hover{
-    text-decoration-color: rgb(66, 66, 66);
+  text-decoration-color: rgb(66, 66, 66);
 }
 
 /* 푸터 */
 footer{
-    position: relative;
-    width: 100%;
-    background-color:rgb(241, 241, 241);
-    margin:0;
-    height : 200px;
+  position: relative;
+  width: 100%;
+  background-color:rgb(241, 241, 241);
+  margin:0;
+  height : 200px;
 }
 
 .footer__container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .footer__left{
-    margin-top : 30px;
-    width : 800px;
+  margin-top : 30px;
+  width : 800px;
 }
 
 .footer__left_list ul{
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 .footer__left_list ul li a{
-    font-size: 12px;
-    margin:7px;
-    color : rgb(90, 90, 90);
-    text-decoration: none;
+  font-size: 12px;
+  margin:7px;
+  color : rgb(90, 90, 90);
+  text-decoration: none;
 }
 
 .footer__left_list ul li a:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer__left_list ul li a b{
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .footer__container{
-    display: flex;
+  display: flex;
 }
 
 .footer__left_bottom{
-    display: flex;
-    margin-top: 30px;
+  display: flex;
+  margin-top: 30px;
 }
 
 .footer__left_bottom div{
-    color : rgb(90, 90, 90);
-    font-size: 12px;
+  color : rgb(90, 90, 90);
+  font-size: 12px;
 }
 
 .footer__left_bottom img{
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 .footer__dropdown_menu{
-    display: flex;
-    border : 1px solid rgb(199, 199, 199);
-    padding : 3px;
-    padding-left: 8px;
-    border-radius: 35px;
-    margin: 24px;
+  display: flex;
+  border : 1px solid rgb(199, 199, 199);
+  padding : 3px;
+  padding-left: 8px;
+  border-radius: 35px;
+  margin: 24px;
 }
 
 .footer__dropdown_menu a{
-    font-size: 12px;
-    line-height: 20px;
-    text-decoration: none;
-    color:rgb(90, 90, 90);
+  font-size: 12px;
+  line-height: 20px;
+  text-decoration: none;
+  color:rgb(90, 90, 90);
 }
 
 .footer__dropdown_menu a img{
-    transform: translate(1px,3px);
+  transform: translate(1px,3px);
 }
 
 
 .footer__right_sns ul{
-   list-style : none;
-    display : flex;
-    width : 130px;
+  list-style : none;
+  display : flex;
+  width : 130px;
 }
 
 .footer__right_sns ul li{
-   margin : 2px;
+  margin : 2px;
 }
 
 .footer__right_sns ul img{
-    width: 20px;
+  width: 20px;
 }
 
 .footer__right_sns ul{
-    display : flex;
-    justify-content: center;
+  display : flex;
+  justify-content: center;
 }
 
 .dropdown_search_theather_top{
-    display: flex;
+  display: flex;
 }
 
 .dropdown_search_theather div{
-    width : 1200px;
-    margin : auto;
+  width : 1200px;
+  margin : auto;
 }
 
 .dropdown_search_theather_top div{
-    font-size: 25px;
-    height:55px;
+  font-size: 25px;
+  height:55px;
 }
 
 #dropdown_search_theather_closebutton{
-    position: absolute;
-    margin-left: 1200px;
+  position: absolute;
+  margin-left: 1200px;
 }
 
 .footer__dropdown_content{
-    position: absolute;
-    display: none;
-    bottom:360px;
-    left: 0px;
-    width:100%;
-    height: 550px;
+  position: absolute;
+  display: none;
+  bottom:360px;
+  left: 0px;
+  width:100%;
+  height: 550px;
 }
 
 .dropdown_search_theather_table{
-    display: flex;
-    flex-direction: column;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top:0px;
-    border:1px solid rgb(82, 82, 82);
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top:0px;
+  border:1px solid rgb(82, 82, 82);
 }
 
 .dropdown_search_theather{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: -75px;
-    width: 100%;
-    color:white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -75px;
+  width: 100%;
+  color:white;
 }
 
 .theather_area b{
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .theather_area{
-    width: 150px;
+  width: 150px;
 }
 
 .theather_list{
-    display: flex;
+  display: flex;
 }
 
 .theather_city{
-    width:800px;
-    margin: 5px 0px;
+  width:800px;
+  margin: 5px 0px;
 }
 
 .theather_area
 {
-    line-height: 60px;
+  line-height: 60px;
 }
 .theather_city nav ul{
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
 .theather_city nav ul li{
-    margin: 3px;
-    padding: 0;
-    height: 25px;
+  margin: 3px;
+  padding: 0;
+  height: 25px;
 }
 
 .theather_city nav ul li a{
-    font-size: 12px;
-    margin-right: 15px;
-    color:rgb(199, 199, 199);
-    text-decoration: none;
-    height: 10px;
+  font-size: 12px;
+  margin-right: 15px;
+  color:rgb(199, 199, 199);
+  text-decoration: none;
+  height: 10px;
 }
 
 .dropdown_search_theather_bg{
-    position: absolute;
-    width: 100%;
-    height: 900px;
-    bottom:-160px;
-    background-color: rgb(49, 49, 49);
+  position: absolute;
+  width: 100%;
+  height: 900px;
+  bottom:-160px;
+  background-color: rgb(49, 49, 49);
 }
 
 .footer__right:hover .footer__dropdown_content{
-    display: flex;
+  display: flex;
 }

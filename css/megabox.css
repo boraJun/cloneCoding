@@ -162,6 +162,14 @@ header{
   width : 100px;
 }
 
+.header__searchmovie_left_bottom a:hover{
+    text-decoration: underline;
+}
+
+.header__menu_dropdown_menu_content a:hover{
+    text-decoration: underline;
+}
+
 .header__menu_dropdown_menu{
   text-align: center;
   font-size: 19px;
@@ -1112,16 +1120,21 @@ main{
     color:rgb(66, 66, 66);
 }
 
+.main__theather_qna a:hover{
+    text-decoration-color: rgb(66, 66, 66);
+}
+
 /* 푸터 */
 footer{
     position: relative;
     width: 100%;
     background-color:rgb(241, 241, 241);
+    margin:0;
+    height : 200px;
 }
 
 .footer__container{
     width: 100%;
-    height : 200px;
     display: flex;
     justify-content: center;
 }
@@ -1189,6 +1202,7 @@ footer{
     transform: translate(1px,3px);
 }
 
+
 .footer__right_sns ul{
    list-style : none;
     display : flex;
@@ -1212,6 +1226,11 @@ footer{
     display: flex;
 }
 
+.dropdown_search_theather div{
+    width : 1200px;
+    margin : auto;
+}
+
 .dropdown_search_theather_top div{
     font-size: 25px;
     height:55px;
@@ -1219,7 +1238,7 @@ footer{
 
 #dropdown_search_theather_closebutton{
     position: absolute;
-    right: 0;
+    margin-left: 1200px;
 }
 
 .footer__dropdown_content{
@@ -1228,7 +1247,7 @@ footer{
     bottom:360px;
     left: 0px;
     width:100%;
-    height: 500px;
+    height: 550px;
 }
 
 .dropdown_search_theather_table{
@@ -1236,7 +1255,7 @@ footer{
     flex-direction: column;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top:15px;
+    padding-top:0px;
     border:1px solid rgb(82, 82, 82);
 }
 
@@ -1245,7 +1264,7 @@ footer{
     flex-direction: column;
     position: absolute;
     bottom: -75px;
-    left : 430px;
+    width: 100%;
     color:white;
 }
 
@@ -1293,7 +1312,7 @@ footer{
 .dropdown_search_theather_bg{
     position: absolute;
     width: 100%;
-    height: 850px;
+    height: 900px;
     bottom:-160px;
     background-color: rgb(49, 49, 49);
 }

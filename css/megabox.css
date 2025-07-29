@@ -1016,6 +1016,21 @@ main{
     margin-bottom: 15px;
 }
 
+.infoButton{
+    background-color: rgba(255, 255, 255, 0);
+    border :0px solid black;
+}
+
+.infoButton:hover{
+    cursor:pointer;
+}
+
+.theatherinfo_list_nav{
+    overflow: hidden;    
+    width : 900px;
+    border-radius: 5%;
+}
+
 .theatherinfo_list{
     display: flex;
 }
@@ -1023,6 +1038,11 @@ main{
 .theatherinfo_list nav ul{
     display: flex;
     justify-content: space-between;
+    width : 1500px;
+}
+
+.theatherinfo_list_ul{
+    transform: translate(0px, 0px);
 }
 
 .theatherinfo_list nav ul li{

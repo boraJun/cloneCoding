@@ -467,7 +467,7 @@
         메가박스 안내
       </div>
       <div class="theatherinfo_list">
-        <a href=""><img src="../img/main/theatherInfo/info_left.png" alt=""></a>
+        <button class="infoButton" onclick="clickLeftInfoButton()"><img src="../img/main/theatherInfo/info_left.png" alt=""></button>
         <nav class="theatherinfo_list_nav">
           <ul class = "theatherinfo_list_ul">
             <li><a href=""><img src="../img/main/theatherInfo/info_dolbycinema.png" alt=""></a></li>
@@ -476,9 +476,13 @@
             <li><a href=""><img src="../img/main/theatherInfo/info_dolbyatmos.png"></a></li>
             <li><a href=""><img src="../img/main/theatherInfo/info_led.png"></a></li>
             <li><a href=""><img src="../img/main/theatherInfo/info_private.png"></a></li>
+            <li><a href=""><img src="../img/main/theatherInfo/info-main-boutiq.png"></a></li>
+            <li><a href=""><img src="../img/main/theatherInfo/info-main-comfort.png"></a></li>
+            <li><a href=""><img src="../img/main/theatherInfo/info-main-recliner.png"></a></li>
+            <li><a href=""><img src="../img/main/theatherInfo/info-main-suite.png"></a></li>
           </ul>
         </nav>
-        <a href=""><img src="../img/main/theatherInfo/info_right.png" alt=""></a>
+        <button class="infoButton" onclick="clickRightInfoButton()"><img src="../img/main/theatherInfo/info_right.png" alt=""></button>
         </div>
       <div class="main__theatherInfo_notice">
         <div class="main__theatherInfo_notice_left">
@@ -746,4 +750,45 @@
     </div>
   </footer>
 </body>
+<script>
+    let x = 0;
+
+		function clickLeftInfoButton(){
+      const info = document.querySelector(".theatherinfo_list_ul");
+      if(x < -450)
+        return;
+
+      let keyframes = [
+      {transform: `translate(${x}px, 0px)`},
+      {transform: `translate(${x - 150}px, 0px)`}];
+      let options = {
+        delay: 0,
+        duration: 500,
+        easing: "ease-in",
+        fill: "forwards" 
+      };
+      document.querySelector(".theatherinfo_list_ul").animate(keyframes, options);
+
+      x -= 150;
+		}
+
+    function clickRightInfoButton(){
+      if(x > -150)
+        return;
+
+			let keyframes = [
+      {transform: `translate(${x}px, 0px)`},
+      {transform: `translate(${x + 150}px, 0px)`}];
+      let options = {
+        delay: 0,
+        duration: 500,
+        easing: "ease-in",
+        fill: "forwards" 
+      };
+      document.querySelector(".theatherinfo_list_ul").animate(keyframes, options);
+
+      x += 150;
+		}
+</script>
+
 </html>
